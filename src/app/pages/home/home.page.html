@@ -18,7 +18,9 @@
   </ion-header>
 
   <ion-content padding>
-
+      <ion-row style="height: 5px"></ion-row>
+      <ion-searchbar animated placeholder="Search Clothing"></ion-searchbar>
+      <ion-row style="height: 5px"></ion-row>
       <ion-slides [options]="slidesOptionsTop">
 
         <ion-slide>
@@ -85,7 +87,19 @@
           </ion-slide>
 
         </ion-slides>
-        
+
+        <ion-fab vertical="bottom" horizontal="start" edge slot="fixed">
+            <ion-fab-button>
+              <ion-icon name="apps"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-list side="end">
+              <ion-fab-button><ion-icon name="logo-vimeo"></ion-icon></ion-fab-button>
+              <ion-fab-button><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
+              <ion-fab-button><ion-icon name="logo-instagram"></ion-icon></ion-fab-button>
+              <ion-fab-button><ion-icon name="logo-linkedin"></ion-icon></ion-fab-button>
+            </ion-fab-list>
+          </ion-fab>
+
     </ion-content>
 
 <ion-footer>

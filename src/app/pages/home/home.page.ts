@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
   slidesOptions = {
-    slidesPerView: 3
+    slidesPerView: 2
   };
 
   slidesOptionsTop = {
