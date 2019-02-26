@@ -1,0 +1,95 @@
+<ion-header>
+
+    <ion-toolbar color="secondary">
+  
+      <ion-title>
+  
+      </ion-title>
+  
+      <ion-menu-button></ion-menu-button>
+
+      <ion-button color="light" shape="round" slot="end" (click)="onClick()">
+          Shops
+          <ion-icon slot="end" name="shirt"></ion-icon>
+        </ion-button>
+  
+    </ion-toolbar>
+  
+  </ion-header>
+
+  <ion-content padding>
+
+      <ion-slides [options]="slidesOptionsTop">
+
+        <ion-slide>
+          <ion-card class="card">
+            <h4>Men</h4>
+          </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-card class="card">
+            <h4>Women</h4>
+          </ion-card>
+        </ion-slide>
+
+      </ion-slides>
+
+        <ion-item lines="none">
+
+          <p slot="start">Featured</p>
+
+          <ion-icon name="arrow-forward" slot="end"></ion-icon>
+
+        </ion-item>
+
+        <ion-slides [options]="slidesOptions">
+          
+          <ion-slide>
+            <ion-card [style.background]="'src(./assets/images/stranger.jpg)'" class="tv_card"></ion-card>
+          </ion-slide> 
+          <ion-slide>
+            <ion-card [style.background]="'src(./assets/images/black.jpg)'" class="tv_card"></ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card [style.background]="'src(./assets/images/super.jpg)'" class="tv_card"></ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card [style.background]="'src(./assets/images/flash.jpg)'" class="tv_card"></ion-card>
+          </ion-slide>
+
+        </ion-slides>
+
+
+        <ion-item lines="none">
+
+          <p slot="start">Browse</p>
+
+          <ion-icon name="arrow-forward" slot="end"></ion-icon>
+
+        </ion-item>
+
+        <ion-slides [options]="slidesOptions">
+
+          <ion-slide>
+            <ion-card [style.background]="'src(./assets/images/ecualizer.jpg)'" class="movie_card"></ion-card>
+          </ion-slide> 
+          <ion-slide>
+            <ion-card [style.background]="'src(./assets/images/avengers.jpg)'"  class="movie_card"></ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card [style.background]="'src(./assets/images/spy.jpg)'"  class="movie_card"></ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card [style.background]="'src(./assets/images/pixels.jpg)'"  class="movie_card"></ion-card>
+          </ion-slide>
+
+        </ion-slides>
+        
+    </ion-content>
+
+<ion-footer>
+    <ion-toolbar text-center>
+      
+    </ion-toolbar>
+  </ion-footer>

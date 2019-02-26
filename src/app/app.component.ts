@@ -16,10 +16,30 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
-    }
+      title: 'My Account',
+      url: '/account',
+      icon: 'wallet'
+    },
+    {
+      title: 'My Packages',
+      url: '/packages',
+      icon: 'cube'
+    },
+    {
+      title: 'Shops Nearby',
+      url: '/shoplist',
+      icon: 'compass'
+    },
+    {
+      title: 'Browse',
+      url: '/productlist',
+      icon: 'radio-button-off'
+    },
+    {
+      title: 'Settings',
+      url: '/settings',
+      icon: 'options'
+    },
   ];
 
   constructor(
