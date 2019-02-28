@@ -13,4 +13,8 @@ export class HomePage {
   slidesOptionsTop = {
     slidesPerView: 2
   };
+
+  slidesOptionsBot = {
+    slidesPerView: 1
+  };
 }

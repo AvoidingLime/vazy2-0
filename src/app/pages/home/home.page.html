@@ -3,14 +3,14 @@
     <ion-toolbar color="secondary">
   
       <ion-title>
-  
+          <ion-searchbar></ion-searchbar>
       </ion-title>
   
-      <ion-menu-button></ion-menu-button>
+      <ion-menu-button slot="start"></ion-menu-button>
 
-      <ion-button color="light" shape="round" slot="end" (click)="onClick()">
-          Shops
-          <ion-icon slot="end" name="shirt"></ion-icon>
+      <ion-button fill="clear" slot="end" (click)="onClick()">
+      <ion-icon  slot="end" name="cart"></ion-icon>
+      
         </ion-button>
   
     </ion-toolbar>
@@ -19,7 +19,7 @@
 
   <ion-content padding>
       <ion-row style="height: 5px"></ion-row>
-      <ion-searchbar animated placeholder="Search Clothing"></ion-searchbar>
+      
       <ion-row style="height: 5px"></ion-row>
       <ion-slides [options]="slidesOptionsTop">
 
@@ -37,31 +37,6 @@
 
       </ion-slides>
 
-        <ion-item lines="none">
-
-          <p slot="start">Featured</p>
-
-          <ion-icon name="arrow-forward" slot="end"></ion-icon>
-
-        </ion-item>
-
-        <ion-slides [options]="slidesOptions">
-          
-          <ion-slide>
-            <ion-card [style.background]="'src(./assets/images/stranger.jpg)'" class="tv_card"></ion-card>
-          </ion-slide> 
-          <ion-slide>
-            <ion-card [style.background]="'src(./assets/images/black.jpg)'" class="tv_card"></ion-card>
-          </ion-slide>
-          <ion-slide>
-            <ion-card [style.background]="'src(./assets/images/super.jpg)'" class="tv_card"></ion-card>
-          </ion-slide>
-          <ion-slide>
-            <ion-card [style.background]="'src(./assets/images/flash.jpg)'" class="tv_card"></ion-card>
-          </ion-slide>
-
-        </ion-slides>
-
 
         <ion-item lines="none">
 
@@ -71,22 +46,91 @@
 
         </ion-item>
 
-        <ion-slides [options]="slidesOptions">
+        <ion-slides [options]="slidesOptionsTop">
 
           <ion-slide>
-            <ion-card [style.background]="'src(./assets/images/ecualizer.jpg)'" class="movie_card"></ion-card>
+            <ion-card [style.background]="'url(./assets/images/ecualizer.jpg)'" class="movie_card"></ion-card>
           </ion-slide> 
           <ion-slide>
-            <ion-card [style.background]="'src(./assets/images/avengers.jpg)'"  class="movie_card"></ion-card>
+            <ion-card [style.background]="'url(./assets/images/avengers.jpg)'"  class="movie_card"></ion-card>
           </ion-slide>
           <ion-slide>
-            <ion-card [style.background]="'src(./assets/images/spy.jpg)'"  class="movie_card"></ion-card>
+            <ion-card [style.background]="'url(./assets/images/spy.jpg)'"  class="movie_card"></ion-card>
           </ion-slide>
           <ion-slide>
-            <ion-card [style.background]="'src(./assets/images/pixels.jpg)'"  class="movie_card"></ion-card>
+            <ion-card [style.background]="'url(./assets/images/pixels.jpg)'"  class="movie_card"></ion-card>
           </ion-slide>
 
         </ion-slides>
+
+        <ion-item lines="none">
+
+            <p slot="start">Shops Nearby</p>
+  
+            <ion-icon name="arrow-forward" slot="end"></ion-icon>
+  
+          </ion-item>
+
+        <ion-slides [options]="slidesOptionsBot">
+
+            <ion-slide>
+                <ion-card>
+                    <ion-item>
+                      <ion-icon name="walk" slot="start"></ion-icon>
+                      <ion-label>Shop Name</ion-label>
+                      <ion-button fill="solid" slot="end">Visit</ion-button>
+                    </ion-item>
+                  
+                    <ion-card-content>
+                      This is a shop description, without any paragraph or header tags,
+                      within an content element.
+                    </ion-card-content>
+                  </ion-card>
+            </ion-slide> 
+            <ion-slide>
+                <ion-card>
+                    <ion-item>
+                      <ion-icon name="walk" slot="start"></ion-icon>
+                      <ion-label>Shop Name</ion-label>
+                      <ion-button fill="solid" slot="end">Visit</ion-button>
+                    </ion-item>
+                  
+                    <ion-card-content>
+                      This is a shop description, without any paragraph or header tags,
+                      within an content element.
+                    </ion-card-content>
+                  </ion-card>
+            </ion-slide>
+            <ion-slide>
+                <ion-card>
+                    <ion-item>
+                      <ion-icon name="walk" slot="start"></ion-icon>
+                      <ion-label>Shop Name</ion-label>
+                      <ion-button fill="solid" slot="end">Visit</ion-button>
+                    </ion-item>
+                  
+                    <ion-card-content>
+                      This is a shop description, without any paragraph or header tags,
+                      within an content element.
+                    </ion-card-content>
+                  </ion-card>
+            </ion-slide>
+            <ion-slide>
+                <ion-card>
+                    <ion-item>
+                      <ion-icon name="walk" slot="start"></ion-icon>
+                      <ion-label>Shop Name</ion-label>
+                      <ion-button fill="solid" slot="end">Visit</ion-button>
+                    </ion-item>
+                  
+                    <ion-card-content>
+                      This is a shop description, without any paragraph or header tags,
+                      within an content element.
+                    </ion-card-content>
+                  </ion-card>
+            </ion-slide>
+  
+          </ion-slides>
 
         <ion-fab vertical="bottom" horizontal="start" edge slot="fixed">
             <ion-fab-button>
@@ -100,6 +144,8 @@
             </ion-fab-list>
           </ion-fab>
 
+
+          
     </ion-content>
 
 <ion-footer>
