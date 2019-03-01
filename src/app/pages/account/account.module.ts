@@ -24,3 +24,4 @@ const routes: Routes = [
   declarations: [AccountPage]
 })
 export class AccountPageModule {}
+

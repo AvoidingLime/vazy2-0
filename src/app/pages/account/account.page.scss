@@ -1,0 +1,29 @@
+page-myaccount {
+    .from {
+        .card {
+            margin: 0;
+            width: auto;
+            margin-bottom: 10px;
+            .item-input:last-child {
+                border-bottom: none !important;
+            }
+            .item-inner {
+                border-bottom: 1px solid #dedede !important;
+            }
+        }
+        h5 {
+            margin-bottom: 6px;
+            font-size: 10px;
+        }
+    }
+    .d-flex {
+        display: flex;
+        align-items: center;
+        .ml-auto {
+            margin-left: auto;
+        }
+    }
+    .btn {
+        margin-bottom: 0;
+    }
+}

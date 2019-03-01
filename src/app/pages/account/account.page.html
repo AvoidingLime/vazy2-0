@@ -2,15 +2,11 @@
 
     <ion-toolbar color="secondary">
   
-      <ion-title>
-  
-      </ion-title>
-  
-      <ion-menu-button></ion-menu-button>
+      <ion-menu-button slot="start"></ion-menu-button>
 
-      <ion-button shape="round" slot="end" (click)="onClick()">
-          Shops
-          <ion-icon slot="end" name="shirt"></ion-icon>
+      <ion-button fill="clear" slot="end" (click)="onClick()">
+      <ion-icon  slot="end" name="cart"></ion-icon>
+      
         </ion-button>
   
     </ion-toolbar>
@@ -18,6 +14,52 @@
   </ion-header>
 
 <ion-content padding>
+
+  
+
+    <div class="from">
+        <ion-card padding>
+            <ion-card-content>
+                <div>
+                        <figure><img src="assets/img/products/product-1.png" alt="" class="border-round-4"></figure>
+                    <ion-list>
+                        <ion-item>
+                            
+                            <ion-input type="text" value="" placeholder="Full name"></ion-input>
+                        </ion-item>
+
+                        <ion-item>
+                            
+                            <ion-input type="text" value="" placeholder="Email"></ion-input>
+                        </ion-item>
+
+                        <ion-item class="md">
+                            
+                            <ion-input type="text" value="" placeholder="Phone Number"></ion-input>
+                        </ion-item>
+                    </ion-list>
+                </div>
+            </ion-card-content>
+        </ion-card>
+
+
+        <ion-card padding-left padding-right>
+            <ion-card-header class="d-flex">
+                <p class="text-light">Shipping Address</p>
+                <p class="text-pink text-right ml-auto" (click)="address()">ADD NEW</p>
+            </ion-card-header>
+
+            <ion-card-content>
+                <h5><strong>Samantha Smith</strong></h5>
+                <p>Hostich Tower, Near National Park, Opp. HSKD Bank, New York, USA 487451</p>
+                <p padding-top>+1 987 654 3210</p>
+            </ion-card-content>
+        </ion-card>
+
+        <div class="fix-bottom">
+            <ion-button full>UPDATE INFO</ion-button>
+        </div>
+    </div>
 
   
 
