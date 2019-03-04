@@ -1,16 +1,15 @@
-<ion-header>
+<ion-header><ion-header>
 
     <ion-toolbar color="secondary">
   
       <ion-title>
-  
       </ion-title>
   
-      <ion-menu-button></ion-menu-button>
+      <ion-menu-button slot="start"></ion-menu-button>
 
-      <ion-button shape="round" slot="end" (click)="onClick()">
-          Shops
-          <ion-icon slot="end" name="shirt"></ion-icon>
+      <ion-button fill="clear" slot="end" (click)="onClick()">
+      <ion-icon  slot="end" name="cart"></ion-icon>
+      
         </ion-button>
   
     </ion-toolbar>
@@ -19,140 +18,6 @@
 
   <ion-content>
 
-      <div>
-      <ion-card>
-          <ion-scroll scrollX="true" style="height:270px;white-space: nowrap;">
-              <figure><img src="assets/img/products/product-1.png" alt="" class="border-round-4"></figure>
-              <figure><img src="assets/img/products/product-1.png" alt="" class="border-round-4"></figure>
-              <figure><img src="assets/img/products/product-1.png" alt="" class="border-round-4"></figure>
-          </ion-scroll>
-          <div class="" padding>
-              <p class="d-flex"><strong>$45.99</strong>
-                  <span class="ml-auto">
-                  <span class="icon-box">
-                    <ion-icon ios="md-star" md="md-star" class="text-yelow"></ion-icon>
-                    <ion-icon ios="md-star" md="md-star" class="text-yelow"></ion-icon>
-                    <ion-icon ios="md-star" md="md-star" class="text-yelow"></ion-icon>
-                    <ion-icon ios="md-star" md="md-star" class="text-yelow"></ion-icon>
-                    <ion-icon ios="md-star" md="md-star" class="text-light"></ion-icon>
-                  </span> 144 Reviews
-                  </span>
-              </p>
-              <h3>Wolks Blue Top</h3>
-              <p class="d-flex text-light">Top & Tshirt
-                  <span class="ml-auto">
-                <img src="assets/imgs/ic_favorite.png" style="display: inline; width:24px; margin-right: 5px">
-                <img src="assets/imgs/share.png" style="display: inline; width:24px;">              
-                  </span>
-              </p>
-          </div>
-      </ion-card>
-  </div>
-  <!--    <End Details >-->
-  <!--    <End Description >-->
-  <div class="description">
-      <ion-card padding class="shadow">
-          <h6 class="text-light">Description</h6>
-          <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
-          <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
-      </ion-card>
-  </div>
-  <!--    <End Description >-->
-
-  <!--    <similar Products>-->
-  <div class="products item-box">
-      <h6 class="text-light">Related Products</h6>
-      <ion-scroll scrollX="true" style="height:270px;white-space: nowrap;">
-
-          <ion-card class="border-round-3 shadow">
-              <div class="icon-box">
-                  <ion-icon *ngIf="!fav" name="md-heart-outline" class="text-pink" (click)="toggleFav()"></ion-icon>
-                  <ion-icon *ngIf="fav" name="md-heart" class="text-pink" (click)="toggleFav()"></ion-icon>
-              </div>
-              <figure><img src="assets/imgs/base-3.png" alt="" class="border-round-3">
-              </figure>
-              <h2 class="item-name text-dark">Levis Blue Top</h2>
-              <p class="text-light">Tops & Tshirt</p>
-              <div class="details d-flex">
-                  <p>
-                      <ion-icon ios="md-star" md="md-star" class="text-yelow"></ion-icon>
-                      4.5
-                  </p>
-                  <p class="ml-auto">
-                      $45.99
-                  </p>
-              </div>
-          </ion-card>
-
-          <ion-card class="border-round-3 shadow">
-              <div class="icon-box">
-                  <ion-icon *ngIf="!fav" name="md-heart-outline" class="text-pink" (click)="toggleFav()"></ion-icon>
-                  <ion-icon *ngIf="fav" name="md-heart" class="text-pink" (click)="toggleFav()"></ion-icon>
-              </div>
-              <figure><img src="assets/imgs/layer-2.png" alt="" class="border-round-3">
-              </figure>
-              <h2 class="item-name text-dark">Kelly White Dress</h2>
-              <p class="text-light">Tops & Tshirt</p>
-              <div class="details d-flex">
-                  <p>
-                      <ion-icon ios="md-star" md="md-star" class="text-yelow"></ion-icon>
-                      4.5
-                  </p>
-                  <p class="ml-auto">
-                      $45.99
-                  </p>
-              </div>
-          </ion-card>
-
-
-          <ion-card class="border-round-3 shadow">
-              <div class="icon-box">
-                  <ion-icon *ngIf="!fav" name="md-heart-outline" class="text-pink" (click)="toggleFav()"></ion-icon>
-                  <ion-icon *ngIf="fav" name="md-heart" class="text-pink" (click)="toggleFav()"></ion-icon>
-              </div>
-              <figure><img src="assets/imgs/layer-7.png" alt="" class="border-round-3">
-              </figure>
-              <h2 class="item-name text-dark">White & Blue Combo</h2>
-              <p class="text-light">Tops & Tshirt</p>
-              <div class="details d-flex">
-                  <p>
-                      <ion-icon ios="md-star" md="md-star" class="text-yelow"></ion-icon>
-                      4.5
-                  </p>
-                  <p class="ml-auto">
-                      $45.99
-                  </p>
-              </div>
-          </ion-card>
-
-
-          <ion-card class="border-round-3 shadow">
-              <div class="icon-box">
-                  <ion-icon *ngIf="!fav" name="md-heart-outline" class="text-pink" (click)="toggleFav()"></ion-icon>
-                  <ion-icon *ngIf="fav" name="md-heart" class="text-pink" (click)="toggleFav()"></ion-icon>
-              </div>
-              <figure><img src="assets/imgs/layer-6.png" alt="" class="border-round-3">
-              </figure>
-              <h2 class="item-name text-dark">Rollows Yellow Top</h2>
-              <p class="text-light">Western Dress</p>
-              <div class="details d-flex">
-                  <p>
-                      <ion-icon ios="md-star" md="md-star" class="text-yelow"></ion-icon>
-                      4.5
-                  </p>
-                  <p class="ml-auto">
-                      $45.99
-                  </p>
-              </div>
-          </ion-card>
-      </ion-scroll>
-  </div>
-  <!--    <similar Products end>-->
-  <div class="fix-bottom btn-shadow ">
-      <div class="d-flex">
-          <button ion-button full class="btn btn-white" style="width: 50%">ADD TO CART</button>
-          <button ion-button full class="btn btn-pink" style="width: 50%" (click)="shipping()">BUY NOW</button>
-      </div>
-  </div>
+      
 
 </ion-content>

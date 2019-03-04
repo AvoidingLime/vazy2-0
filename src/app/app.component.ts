@@ -21,6 +21,11 @@ export class AppComponent {
       icon: 'wallet'
     },
     {
+      title: 'Shop detail',
+      url: '/shopdetail',
+      icon: 'wallet'
+    },
+    {
       title: 'My Packages',
       url: '/packages',
       icon: 'cube'
